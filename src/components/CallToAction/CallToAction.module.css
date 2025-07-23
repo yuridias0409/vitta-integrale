@@ -1,0 +1,41 @@
+.ctaSection {
+  background-color: #2876A8;
+  padding: 50px 20px;
+  text-align: center;
+}
+.ctaContainer {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.ctaTitle {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.ctaButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background-color: #7ABD3A;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 16px 28px;
+  border-radius: 50px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.ctaButton:hover {
+  background-color: #6aa830;
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .ctaTitle {
+      font-size: 1.5rem;
+  }
+  .ctaButton {
+      font-size: 16px;
+      padding: 14px 24px;
+  }
+}

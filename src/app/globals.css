@@ -1,0 +1,39 @@
+/* Importa a fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+/* Reset e Estilos Globais */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    color: #333;
+    background-color: #ffffff; /* Fundo branco para o corpo principal */
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+}
+
+/* Classe global para títulos de seção */
+.section_title {
+    font-weight: 700;
+    color: #2876A8;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,256 @@
+/* Add Lato font import if not already globally defined */
+/* You might need to add this to your global.css or equivalent */
+/* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap'); */
+
+body {
+  font-family: 'Lato', sans-serif; /* Apply Lato font to the whole body or specific elements */
+}
+
+.navbar {
+  background: #fff;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  width: 100%;
+}
+.navbarContainer {
+  display: flex;
+  justify-content: space-between; /* This pushes the first item (logo) to the far left and the last item (menu) to the far right */
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1300px; /* Limits the content width */
+  padding: 0 24px;
+}
+.navbarLogo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 900;
+  color: #333;
+  text-decoration: none;
+}
+.logoTitle { /* Specific styling for the title text */
+  font-size: 1.8rem; /* Decreased font size for title */
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 2.5rem;
+}
+.navLink {
+  color: #555;
+  font-weight: 700;
+  padding: 5px 0;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+.navLink:hover {
+  color: #2876A8;
+  border-bottom-color: #2876A8;
+}
+
+/* Estilos para o Dropdown (Desktop) */
+.dropdown {
+  position: relative;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  list-style: none;
+  padding: 10px 0;
+  min-width: 200px;
+  border-radius: 4px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown:hover .dropdownMenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdownItem {
+  padding: 10px 20px;
+  color: #555;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.dropdownItem:hover {
+  background-color: #f0f0f0;
+  color: #2876A8;
+}
+
+/* Dropdown Arrow Styles */
+.dropdownArrow {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 0.7em;
+  transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropdownArrow {
+  transform: rotate(180deg);
+}
+
+
+/* Mobile Menu Styles */
+.mobileMenuIcon {
+  display: none; /* Hidden by default, shown on mobile */
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25px;
+  height: 20px;
+  /* Removed position: absolute; and left: 24px; for mobile flow */
+  z-index: 1002; /* Ensure it's above other elements if needed */
+}
+
+.mobileMenuIcon .bar {
+  width: 100%;
+  height: 3px;
+  background-color: #333;
+  border-radius: 2px;
+}
+
+.mobileSidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially off-screen to the LEFT */
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.1); /* Adjusted shadow for left-slide */
+  transition: left 0.3s ease-in-out; /* Transition 'left' property */
+  z-index: 1001; /* Above navbar */
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px; /* Space for close button */
+}
+
+.mobileSidebar.show {
+  left: 0; /* Slide in from the LEFT */
+}
+
+.closeButton {
+  position: absolute;
+  top: 20px;
+  right: 20px; /* Keep close button on the right inside the sidebar for consistency */
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.mobileNavMenu {
+  list-style: none;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.mobileNavLink {
+  color: #333;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.mobileNavLink:hover {
+  color: #2876A8;
+}
+
+.mobileDropdown {
+  position: relative;
+}
+
+.mobileDropdownMenu {
+  list-style: none;
+  padding-left: 15px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.mobileDropdown.open .mobileDropdownMenu {
+  max-height: 300px;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Mobile Dropdown Arrow Animation */
+.mobileDropdown.open .dropdownArrow {
+  transform: rotate(180deg);
+}
+
+
+.mobileDropdownItem {
+  color: #555;
+  text-decoration: none;
+  display: block;
+  padding: 8px 0;
+  font-size: 1rem;
+}
+
+.mobileDropdownItem:hover {
+  background-color: #f0f0f0;
+  color: #2876A8;
+}
+
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .navMenu {
+    display: none; /* Hide desktop menu on mobile */
+  }
+
+  .mobileMenuIcon {
+    display: flex; /* Show hamburger icon on mobile */
+    order: -1; /* Ensures hamburger is first */
+    margin-right: 1px; /* Controls the space between hamburger and logo */
+    /* Override absolute positioning for mobile flow */
+    position: static;
+    left: initial;
+  }
+
+  .navbarContainer {
+    justify-content: flex-start; /* This is for mobile, pushing everything to the left */
+    position: static;
+    padding: 0 24px;
+  }
+}

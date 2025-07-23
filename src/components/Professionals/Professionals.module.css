@@ -1,0 +1,40 @@
+.professionalsSection {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+.professionalsGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.professionalCard {
+  text-align: center;
+}
+.professionalImageWrapper {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 5px solid #2876A8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.professionalName {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+.professionalDescription {
+  color: #666;
+  font-size: 1rem;
+}
+@media (max-width: 768px) {
+  .professionalImageWrapper {
+      width: 160px;
+      height: 160px;
+  }
+}

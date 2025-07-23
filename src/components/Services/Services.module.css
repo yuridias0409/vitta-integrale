@@ -1,0 +1,109 @@
+/* Services.module.css */
+
+/* SEÇÃO DE SERVIÇOS HÍBRIDA (GRADE / CARROSSEL) */
+.servicesSection {
+  padding: 60px 20px; /* Mantém o padding original */
+  background-color: #f8f9fa; /* Cor de fundo original */
+}
+
+/* Layout Desktop (Grade Centralizada) */
+.servicesContainer {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem para a próxima linha */
+  justify-content: center; /* Centraliza os itens */
+  gap: 40px; /* Espaçamento entre os itens */
+  max-width: 1200px; /* Largura máxima para a grade */
+  margin: 0 auto;
+}
+
+.serviceItem {
+  flex: 0 0 auto; /* Permite que o item não cresça nem diminua, mantendo seu tamanho intrínseco */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none; /* Garante que o link não tenha sublinhado */
+  /* Removido `width: 160px;` aqui para permitir que o flexbox gerencie melhor */
+}
+
+.serviceCircle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #fff; /* Fundo branco para os círculos */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Importante para a imagem não "vazar" */
+  border: 1px solid #e8e8e8;
+  transition: box-shadow 0.3s ease; /* Transição para o hover do shadow */
+  /* Removido margin-bottom aqui, será ajustado no .serviceTitle */
+}
+
+/* Estilo para a imagem dentro do círculo */
+.serviceCircle img {
+  width: 100%; /* Imagem preenche o círculo */
+  height: 100%; /* Imagem preenche o círculo */
+  object-fit: cover; /* Recorta a imagem para preencher o círculo sem distorcer */
+  transition: transform 0.3s ease; /* Transição para o zoom no hover */
+}
+
+.serviceTitle {
+  margin-top: 15px; /* Espaçamento entre o círculo e o título */
+  font-weight: 700;
+  color: #333;
+  font-size: 1rem; /* Tamanho da fonte original */
+  text-align: center;
+  transition: color 0.3s ease; /* Transição para a cor no hover */
+}
+
+/* Efeitos de Hover */
+.serviceItem:hover .serviceCircle {
+  box-shadow: 0 8px 25px rgba(40, 118, 168, 0.15); /* Sombra no hover */
+  /* Removido `transform: translateY(-5px);` para manter o comportamento original de hover */
+}
+.serviceItem:hover .serviceCircle img {
+  transform: scale(1.08); /* Zoom na imagem no hover */
+}
+.serviceItem:hover .serviceTitle {
+  color: #2876A8; /* Cor do título no hover */
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 768px) {
+  .servicesSection {
+      padding: 60px 0; /* Ajuste o padding vertical para carrossel */
+  }
+  .servicesContainer {
+      flex-wrap: nowrap; /* Desabilita o wrap para criar o carrossel */
+      justify-content: flex-start; /* Alinha os itens ao início para rolagem horizontal */
+      overflow-x: auto; /* Habilita a rolagem horizontal */
+      padding: 10px 25px; /* Padding horizontal para visualização do carrossel */
+      scroll-snap-type: x mandatory; /* Efeito de 'snap' para os itens na rolagem */
+      -webkit-overflow-scrolling: touch; /* Melhora a rolagem em iOS */
+      scrollbar-width: none; /* Oculta a barra de rolagem para Firefox */
+  }
+
+  /* Oculta a barra de rolagem para navegadores baseados em WebKit (Chrome, Safari) */
+  .servicesContainer::-webkit-scrollbar {
+      display: none;
+  }
+
+  .serviceItem {
+      scroll-snap-align: center; /* Cada item 'gruda' ao centro da tela ao rolar */
+      flex-shrink: 0; /* Evita que os itens diminuam */
+      margin-right: 25px; /* Espaçamento entre os itens no carrossel */
+      width: auto; /* Deixa o conteúdo definir a largura */
+  }
+  /* Para o último item não ter margin-right extra */
+  .serviceItem:last-child {
+    margin-right: 0;
+  }
+
+  .serviceCircle {
+      width: 130px; /* Tamanho menor para o círculo no mobile */
+      height: 130px;
+  }
+  .serviceTitle {
+      font-size: 0.9rem; /* Tamanho da fonte menor no mobile */
+  }
+}

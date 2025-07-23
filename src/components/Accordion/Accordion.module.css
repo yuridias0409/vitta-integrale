@@ -1,0 +1,87 @@
+.specialtiesSection {
+  padding: 80px 20px;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sectionTitle {
+  font-weight: 700;
+  color: #2876A8;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordionItem {
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 15px rgba(40, 118, 168, 0.08);
+  overflow: hidden;
+  border: 1px solid #e8e8e8;
+}
+
+.accordionHeader {
+  width: 100%;
+  background-color: #fff;
+  border: none;
+  padding: 20px 25px;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #333;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.accordionHeader:hover {
+  background-color: #f9f9f9;
+}
+
+.accordionIcon {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2876A8;
+  transition: transform 0.3s ease-in-out;
+}
+
+.active .accordionIcon {
+  /* This rotates the plus sign to an 'x' or changes to minus */
+  transform: rotate(180deg); /* Changed from 45deg for a standard plus-to-minus animation */
+}
+
+.accordionContent {
+  max-height: 0;
+  overflow: hidden;
+  /* Adjust transition for a smoother effect */
+  transition: max-height 0.5s ease-in-out, padding 0.5s ease-in-out; 
+}
+
+.accordionContentInner {
+  padding: 0px 25px; /* Set initial horizontal padding */
+  color: #555;
+  line-height: 1.6;
+  border-top: 1px solid #e8e8e8;
+  /* Add transition for padding as well */
+  transition: padding 0.5s ease-in-out; 
+}
+
+/* When the accordion is active, apply padding to the inner content */
+.active .accordionContentInner {
+  padding-bottom: 25px; /* Apply bottom padding when active */
+  padding-top: 25px; /* Apply top padding when active */
+}
