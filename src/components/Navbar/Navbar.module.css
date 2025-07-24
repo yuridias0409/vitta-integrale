@@ -1,6 +1,7 @@
 /* Add Lato font import if not already globally defined */
 /* You might need to add this to your global.css or equivalent */
 /* @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap'); */
+
 .navbar {
   background: #fff;
   height: 90px;
