@@ -9,7 +9,8 @@ interface ServicePageProps {
 }
 
 // Este é o "Server Component". Ele é simples e roda no servidor.
-const ServicePage: React.FC<ServicePageProps> = ({ params }) => {
+// No Next.js App Router, as props para um Page Component (como params) são diretas, não Promises.
+const ServicePage = ({ params }: ServicePageProps) => { // Removed React.FC<ServicePageProps>
   // 1. Lê o parâmetro da URL no servidor
   const { serviceName } = params;
 
