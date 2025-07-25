@@ -1,8 +1,10 @@
+import { StaticImageData } from "next/image";
+
 export interface Specialist {
   name: string;
   specialty: string;
   shortDescription: string;
-  img: string;
+  img: StaticImageData;
   fullDescription: string;
 }
 
@@ -14,7 +16,7 @@ export interface AccordionItemData {
 export interface ServiceData {
   title: string;
   description: string;
-  heroImage: string;
+  heroImage: StaticImageData;
   accordionTitle: string;
   accordionItems: AccordionItemData[];
   specialistsTitle: string;
