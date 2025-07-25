@@ -6,6 +6,7 @@ export interface Specialist {
   shortDescription: string;
   img: StaticImageData;
   fullDescription: string;
+  callToWhatsapp: string;
 }
 
 export interface AccordionItemData {

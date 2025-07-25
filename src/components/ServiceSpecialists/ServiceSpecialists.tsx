@@ -13,10 +13,13 @@ interface SpecialistModalProps {
 const SpecialistModal: React.FC<SpecialistModalProps> = ({ specialist, onClose }) => {
   if (!specialist) return null;
 
-  const { name, specialty, img, fullDescription } = specialist;
-  const message = `Olá! Gostaria de agendar uma sessão com ${name} para ${specialty}.`;
-  const encodedMessage = encodeURIComponent(message);
-  const whatsappLink = `https://wa.me/5516997308501?text=${encodedMessage}`;
+  const { name, specialty, img, fullDescription, callToWhatsapp } = specialist;
+  const encodedMessage = encodeURIComponent(callToWhatsapp);
+  let whatsappLink = `https://wa.me/5516997308501?text=${encodedMessage}`;
+  
+  if(name == 'Dr. Lucas'){
+    whatsappLink = `https://wa.me/5516997566224?text=${encodedMessage}`;
+  }
 
   return (
     <div className={styles.modalOverlay} onClick={onClose}>

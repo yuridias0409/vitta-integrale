@@ -17,11 +17,11 @@ interface ProfessionalCardProps {
 
 const professionalsData: ProfessionalCardProps[] = [
   { name: 'Érika Shirley', description: 'Fisioterapeuta', img: erikaImg },
-  { name: 'Karina', description: 'Terapeuta Ocupacional', img: karinaImg },
-  { name: 'Mirella', description: 'Fisioterapeuta', img: mirellaImg },
+  { name: 'Karina', description: 'Fisioterapeuta', img: karinaImg },
   { name: 'Elaine', description: 'Fisioterapeuta', img: elaineImg },
-  { name: 'Lucas', description: 'Odontologia', img: lucasImg },
-  { name: 'Eduarda', description: 'Fisioterapeuta', img: eduardaImg }
+  { name: 'Mirella', description: 'Terapeuta Ocupacional', img: mirellaImg },
+  { name: 'Lucas', description: 'Cirurgião Dentista', img: lucasImg },
+  { name: 'Eduarda', description: 'Atendente', img: eduardaImg }
 ];
 
 const ProfessionalCard: React.FC<ProfessionalCardProps> = ({ name, description, img }) => (

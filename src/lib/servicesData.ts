@@ -31,8 +31,8 @@ export const servicesData: Services = {
         content: "Proporciona alívio e conforto durante a gravidez. Com técnica especializada e segura para a gestante, a drenagem melhora a circulação e reduz significativamente o inchaço nas pernas, pés e mãos, além de promover um relaxamento profundo para a futura mamãe."
       },
       {
-        title: "Redução de Inchaço e Retenção de Líquido",
-        content: "Ideal para combater a retenção de líquidos causada por fatores hormonais, estilo de vida ou viagens. A drenagem linfática elimina o excesso de fluido acumulado nos tecidos, proporcionando uma sensação imediata de leveza, bem-estar e melhora do contorno corporal."
+        title: "Redução de Lipedemas e Retenção de Líquido",
+        content: "Ideal para o manejo dos sintomas do lipedema e para combater a retenção de líquidos. A drenagem linfática auxilia na eliminação do excesso de fluido acumulado, aliviando o inchaço, a sensação de peso e o desconforto, proporcionando mais bem-estar e melhora na qualidade de vida."
       },
       {
         title: "Relaxamento e Bem-Estar",
@@ -42,18 +42,12 @@ export const servicesData: Services = {
     specialistsTitle: "Nossas Especialistas",
     specialists: [
       {
-        name: "Érika Shirley",
-        specialty: "Fisioterapeuta Dermato-Funcional",
-        shortDescription: "Drenagem Geral",
-        img: erikaImg,
-        fullDescription: "Érika é especialista em Fisioterapia Dermato-Funcional, com ampla experiência em drenagem linfática manual para o pós-operatório de cirurgias plásticas e reparadoras. Sua técnica apurada visa acelerar a recuperação, reduzir edemas e fibroses, garantindo os melhores resultados estéticos e funcionais para os pacientes."
-      },
-      {
         name: "Karina",
         specialty: "Fisioterapeuta em Saúde da Mulher",
         shortDescription: "Drenagem Geral",
         img: karinaImg,
-        fullDescription: "Karina dedica-se à saúde e bem-estar feminino em todas as fases da vida. É especialista em drenagem linfática para gestantes, aliviando o desconforto do inchaço, e também atua com a drenagem para fins estéticos e de relaxamento, ajudando a combater a retenção de líquido e a promover uma sensação de leveza."
+        fullDescription: "Karina dedica-se à saúde e bem-estar feminino em todas as fases da vida. É especialista em drenagem linfática para gestantes, aliviando o desconforto do inchaço, e também atua com a drenagem para fins estéticos e de relaxamento, ajudando a combater a retenção de líquido e a promover uma sensação de leveza.",
+        callToWhatsapp: "Olá! Gostaria de saber mais sobre a Drenagem Linfática e bem-estar com a fisioterapeuta Karina."
       }
     ],
     ctaText: "Pronta para sentir a leveza e o bem-estar que seu corpo merece?"
@@ -79,6 +73,14 @@ export const servicesData: Services = {
       {
         title: "Pediátrica",
         content: "Cuidamos do desenvolvimento motor de bebês e crianças com atrasos, síndromes genéticas ou condições neurológicas. De forma lúdica e interativa, estimulamos o movimento correto, a força e o equilíbrio, garantindo que cada criança atinja seu máximo potencial."
+      },
+      {
+        title: "Ortopédica",
+        content: "Especializada na reabilitação de lesões musculares, fraturas, entorses e pós-operatórios. Nosso foco é aliviar a dor, restaurar a mobilidade, fortalecer os músculos e acelerar sua recuperação para que você possa retornar às suas atividades com segurança e confiança."
+      },
+      {
+        title: "Geriátrica",
+        content: "Dedicada a promover a saúde e a qualidade de vida para idosos. Atuamos na prevenção de quedas, na melhora do equilíbrio, força e flexibilidade, visando manter a independência funcional e a autonomia para uma vida mais ativa e segura."
       }
     ],
     specialistsTitle: "Nossos Especialistas",
@@ -86,23 +88,26 @@ export const servicesData: Services = {
       {
         name: "Érika Shirley",
         specialty: "Fisioterapeuta Pediátrica e Neurológica",
-        shortDescription: "Fisioterapia Pediátrica",
+        shortDescription: "Fisioterapeuta",
         img: erikaImg,
-        fullDescription: "Érika é especialista no atendimento de crianças e pacientes com distúrbios neurológicos. Com vasta experiência em reabilitação motora e desenvolvimento infantil, ela utiliza abordagens lúdicas e técnicas avançadas para garantir que cada paciente atinja seu máximo potencial funcional, promovendo independência e qualidade de vida."
+        fullDescription: "Érika é uma fisioterapeuta dedicada a oferecer um tratamento completo e humanizado. Com vasta experiência e uma especialização destacada no atendimento de crianças e pacientes com distúrbios neurológicos (neuropediatria), sua abordagem integrada permite tratar com a mesma excelência pacientes adultos com queixas ortopédicas, dores crônicas e outras necessidades de reabilitação. Ela utiliza técnicas avançadas para promover independência e qualidade de vida a todos os seus pacientes.",
+        callToWhatsapp: "Olá! Vi no site sobre a Fisioterapia Pediátrica e Neurológica com a Érika Shirley e gostaria de mais informações."
       },
       {
         name: "Karina",
         specialty: "Fisioterapeuta Ortopédica e Traumatológica",
-        shortDescription: "Fisioterapia Ortopédica",
+        shortDescription: "Fisioterapeuta",
         img: karinaImg,
-        fullDescription: "Karina foca na reabilitação de lesões musculoesqueléticas, como fraturas, entorses e condições pós-cirúrgicas. Sua abordagem inclui terapia manual, cinesioterapia e recursos eletrotermofototerápicos para acelerar a recuperação, aliviar a dor e restaurar a função dos seus pacientes, sejam eles atletas ou não."
+        fullDescription: "Karina é uma fisioterapeuta versátil, comprometida com a recuperação funcional de seus pacientes. Seu forte enfoque está na reabilitação de lesões musculoesqueléticas (ortopedia e traumatologia), tratando desde atletas a idosos. Além de sua especialidade, possui ampla capacidade para atender outras áreas, como saúde da mulher e disfunções posturais, utilizando uma combinação de terapia manual, cinesioterapia e recursos modernos para restaurar a função global do corpo.",
+        callToWhatsapp: "Olá! Tenho interesse na Fisioterapia Ortopédica com a especialista Karina e gostaria de agendar uma avaliação."
       },
       {
         name: "Elaine",
         specialty: "Fisioterapeuta Cardiorrespiratória",
-        shortDescription: "Fisioterapia Ortopédica",
+        shortDescription: "Fisioterapeuta",
         img: elaineImg,
-        fullDescription: "Elaine dedica-se à prevenção e ao tratamento de doenças cardíacas e respiratórias. Seu trabalho é crucial na reabilitação de pacientes pós-infarto, cirurgias cardíacas e portadores de doenças como DPOC e asma, utilizando exercícios supervisionados para melhorar a capacidade funcional e a qualidade de vida."
+        fullDescription: "Elaine é uma fisioterapeuta experiente, focada em promover saúde e bem-estar. Sua principal área de especialização é a fisioterapia cardiorrespiratória, essencial na reabilitação de pacientes com DPOC, asma e pós-cirúrgicos cardíacos. Para além desse campo, Elaine atua com maestria na fisioterapia geral, tratando condições ortopédicas e aplicando técnicas como RPG para correção postural e alívio de dores, garantindo um cuidado integral e personalizado a cada paciente.",
+        callToWhatsapp: "Olá! Gostaria de mais informações sobre a Fisioterapia Cardiorrespiratória com a especialista Elaine."
       }
     ],
     ctaText: "Pronto para iniciar sua jornada de recuperação e bem-estar?"
@@ -137,7 +142,8 @@ export const servicesData: Services = {
         specialty: "Fisioterapeuta e Instrutora de Pilates Clínico",
         shortDescription: "Fisioterapeuta e Instrutora de Pilates",
         img: karinaImg,
-        fullDescription: "Karina une sua sólida formação em Fisioterapia com a paixão pelo método Pilates para oferecer uma abordagem terapêutica completa. Ela desenvolve planos de tratamento individualizados, utilizando o Pilates para reabilitar lesões, corrigir desvios posturais e aliviar dores crônicas. Sua expertise também abrange o Pilates para populações especiais, como gestantes e idosos, focando sempre na segurança, precisão e bem-estar de cada aluno."
+        fullDescription: "Karina une sua sólida formação em Fisioterapia com a paixão pelo método Pilates para oferecer uma abordagem terapêutica completa. Ela desenvolve planos de tratamento individualizados, utilizando o Pilates para reabilitar lesões, corrigir desvios posturais e aliviar dores crônicas. Sua expertise também abrange o Pilates para populações especiais, como gestantes e idosos, focando sempre na segurança, precisão e bem-estar de cada aluno.",
+        callToWhatsapp: "Olá! Gostaria de agendar uma avaliação ou saber mais sobre as aulas de Pilates com a fisioterapeuta Karina."
       }
     ],
     ctaText: "Pronto para transformar seu corpo e mente com o Pilates?"
@@ -172,7 +178,8 @@ export const servicesData: Services = {
         specialty: "Fisioterapeuta",
         shortDescription: "Fisioterapeuta",
         img: elaineImg,
-        fullDescription: "Elaine combina sua expertise em fisioterapia com a metodologia da RPG e Pilates para oferecer um tratamento completo para seus pacientes. Ela foca no fortalecimento do core, na melhora da consciência corporal e no alongamento, sendo ideal para quem busca reabilitação, prevenção e bem-estar através do movimento."
+        fullDescription: "Elaine combina sua expertise em fisioterapia com a metodologia da RPG e Pilates para oferecer um tratamento completo para seus pacientes. Ela foca no fortalecimento do core, na melhora da consciência corporal e no alongamento, sendo ideal para quem busca reabilitação, prevenção e bem-estar através do movimento.",
+        callToWhatsapp: "Olá! Gostaria de saber mais sobre as sessões de RPG com a fisioterapeuta Elaine."
       }
     ],
     ctaText: "Pronto para transformar seu corpo e mente com o Pilates?"
@@ -203,7 +210,8 @@ export const servicesData: Services = {
         specialty: "Terapeuta Ocupacional com Foco Infantil",
         shortDescription: "T.O. com Foco Infantil",
         img: mirellaImg,
-        fullDescription: "Mirella é apaixonada por promover o desenvolvimento saudável e a autonomia das crianças. Com especialização em Terapia Ocupacional Pediátrica, ela atua com foco em integração sensorial, seletividade alimentar e no desenvolvimento de habilidades motoras e sociais através do brincar terapêutico. Seu objetivo é ajudar cada criança a superar desafios e a se engajar plenamente em suas ocupações diárias, como a escola e as atividades de autocuidado."
+        fullDescription: "Mirella é apaixonada por promover o desenvolvimento saudável e a autonomia das crianças. Com especialização em Terapia Ocupacional Pediátrica, ela atua com foco em integração sensorial, seletividade alimentar e no desenvolvimento de habilidades motoras e sociais através do brincar terapêutico. Seu objetivo é ajudar cada criança a superar desafios e a se engajar plenamente em suas ocupações diárias, como a escola e as atividades de autocuidado.",
+        callToWhatsapp: "Olá! Vi no site sobre a Terapia Ocupacional Infantil com a Mirella e gostaria de mais informações."
       }
     ],
     ctaText: "Quer retomar suas atividades diárias com mais independência e confiança?"
@@ -223,8 +231,12 @@ export const servicesData: Services = {
         content: "Trabalhamos para expandir o vocabulário, aprimorar a capacidade de expressar desejos e necessidades, e melhorar a compreensão da linguagem verbal e não verbal, usando métodos que se adaptam às necessidades individuais."
       },
       {
-        title: "Redução de Comportamentos Desafiadores",
-        content: "Através da análise funcional, identificamos as causas de comportamentos desafiadores (como agressão ou autoagressão) e implementamos estratégias para reduzir sua ocorrência, ensinando comportamentos alternativos e mais adaptativos."
+        title: "Redução de Comportamentos Disruptivos",
+        content: "Através da análise funcional, identificamos as causas de comportamentos disruptivos (como agressão ou autoagressão) e implementamos estratégias para reduzir sua ocorrência, ensinando comportamentos alternativos e mais adaptativos."
+      },
+      {
+        title: "Desenvolvimento Psicomotor",
+        content: "Estimulamos o desenvolvimento global da criança através da psicomotricidade, integrando as funções motoras, cognitivas e afetivas. Nossas atividades trabalham o equilíbrio, a coordenação, a lateralidade e a noção de espaço e tempo, fundamentais para a aprendizagem e a socialização."
       },
       {
         title: "Autonomia e Habilidades de Vida Diária",
@@ -238,7 +250,8 @@ export const servicesData: Services = {
         specialty: "Fisioterapeuta e Especialista em Terapia ABA",
         shortDescription: "Especialista em Terapia ABA",
         img: erikaImg,
-        fullDescription: "Érika é uma profissional dedicada e experiente na aplicação da Terapia ABA. Com um olhar atento ao desenvolvimento infantil e às necessidades individuais de cada criança, ela trabalha para promover a comunicação, habilidades sociais e autonomia, utilizando estratégias lúdicas e baseadas em evidências científicas."
+        fullDescription: "Érika é uma profissional dedicada e experiente na aplicação da Terapia ABA. Com um olhar atento ao desenvolvimento infantil e às necessidades individuais de cada criança, ela trabalha para promover a comunicação, habilidades sociais e autonomia, utilizando estratégias lúdicas e baseadas em evidências científicas.",
+        callToWhatsapp: "Olá! Gostaria de mais informações sobre a Terapia ABA com a especialista Érika Shirley."
       }
     ],
     ctaText: "Quer saber mais sobre como a Terapia ABA pode transformar vidas?"
@@ -266,39 +279,56 @@ export const servicesData: Services = {
         content: "Aplicação de fitas elásticas adesivas sobre a pele para oferecer suporte muscular, reduzir inchaço, aliviar a dor e melhorar a circulação. É amplamente utilizada em lesões esportivas, pós-operatório e para suporte postural, sem restringir o movimento."
       }
     ],
-    specialistsTitle: "Nossa Especialista em Terapia ABA",
+    specialistsTitle: "Nossos Especialistas em Terapia Manual",
     specialists: [
       {
         name: "Érika Shirley",
         specialty: "Fisioterapeuta",
         shortDescription: "Especialista em Terapia Manual",
         img: erikaImg,
-        fullDescription: "Érika é especialista no atendimento de crianças e pacientes com distúrbios neurológicos. Com vasta experiência em reabilitação motora e desenvolvimento infantil, ela utiliza abordagens lúdicas e técnicas avançadas para garantir que cada paciente atinja seu máximo potencial funcional, promovendo independência e qualidade de vida."
+        fullDescription: "Érika é especialista no atendimento de crianças e pacientes com distúrbios neurológicos. Com vasta experiência em reabilitação motora e desenvolvimento infantil, ela utiliza abordagens lúdicas e técnicas avançadas de terapia manual para garantir que cada paciente atinja seu máximo potencial funcional, promovendo independência e qualidade de vida.",
+        callToWhatsapp: "Olá! Gostaria de saber mais sobre os tratamentos de Terapia Manual com a fisioterapeuta Érika."
+      },
+      {
+        name: "Karina",
+        specialty: "Fisioterapeuta Ortopédica",
+        shortDescription: "Especialista em Terapia Manual",
+        img: karinaImg,
+        fullDescription: "Karina utiliza a Terapia Manual como uma ferramenta chave na reabilitação ortopédica. Sua abordagem visa aliviar a dor, restaurar a mobilidade e corrigir disfunções articulares e musculares, sendo ideal para o tratamento de lesões, dores na coluna e recuperação pós-cirúrgica.",
+        callToWhatsapp: "Olá! Gostaria de mais informações sobre a Terapia Manual focada em ortopedia com a fisioterapeuta Karina."
       }
     ],
-    ctaText: "Quer saber mais sobre como a Terapia ABA pode transformar vidas?"
+    ctaText: "Pronto para sentir o alívio e a recuperação que a Terapia Manual pode oferecer?"
   },
   odontologia: {
-    title: "Odontologia",
-    description: "Cuidar do sorriso é cuidar da saúde e da autoestima. Na Vitta Integrale, oferecemos um tratamento odontológico completo, que une tecnologia de ponta e um atendimento humanizado para garantir a saúde bucal e a estética do seu sorriso, sempre com foco no seu conforto e bem-estar.",
+    title: "Odontologia Integrada",
+    description: "Cuidar do sorriso é cuidar da saúde e da autoestima. Na Vitta Integrale, oferecemos uma odontologia integrada que une tecnologia de ponta, um atendimento humanizado e todas as especialidades para garantir sua saúde bucal e a estética do seu sorriso em um só lugar.",
     heroImage: odontoHero,
     accordionTitle: "Nossos Tratamentos Odontológicos",
     accordionItems: [
       {
         title: "Clínica Geral e Prevenção",
-        content: "A base para um sorriso saudável. Realizamos check-ups detalhados, limpezas (profilaxia), aplicação de flúor e restaurações. Nosso foco é na prevenção, orientando sobre a higiene bucal correta para evitar problemas futuros e manter sua saúde em dia."
+        content: "A base para um sorriso duradouro. Realizamos check-ups digitais, profilaxia (limpeza), aplicação de flúor e restaurações estéticas. Nosso foco é diagnosticar e prevenir problemas, orientando sobre a higiene ideal para manter sua saúde bucal em dia."
       },
       {
-        title: "Estética do Sorriso",
-        content: "Transforme seu sorriso e sua autoconfiança com nossos tratamentos estéticos. Oferecemos clareamento dental a laser, facetas de porcelana e resina, e planejamento digital do sorriso para criar um resultado harmonioso, natural e que atenda às suas expectativas."
+        title: "Ortodontia",
+        content: "Alinhe seu sorriso e corrija a função mastigatória. Oferecemos desde os aparelhos fixos tradicionais até os modernos alinhadores invisíveis, planejando um tratamento eficiente e discreto para conquistar o sorriso que você sempre desejou."
+      },
+      {
+        title: "Periodontia (Tratamento de Gengiva)",
+        content: "A saúde da gengiva é o alicerce do seu sorriso. Tratamos desde a gengivite até a periodontite avançada, removendo a inflamação e o tártaro para garantir a sustentação dos dentes e evitar a perda dental."
       },
       {
         title: "Endodontia (Tratamento de Canal)",
-        content: "Quando a polpa do dente está inflamada ou infectada, o tratamento de canal é a solução para salvar o dente e eliminar a dor. Utilizamos técnicas modernas para um procedimento rápido, seguro e confortável, preservando a estrutura dental e a saúde bucal."
+        content: "Salvamos seu dente e eliminamos a dor com tecnologia de ponta. O tratamento de canal é realizado de forma rápida e indolor com sistemas mecanizados, removendo a infecção e preservando a estrutura dental para uma futura reabilitação."
       },
       {
-        title: "Implantodontia (Implantes Dentários)",
-        content: "Os implantes dentários são a solução mais moderna e eficiente para substituir dentes perdidos. Eles funcionam como raízes artificiais, oferecendo uma base segura para coroas, pontes ou dentaduras, restaurando a função mastigatória, a fala e a estética do sorriso com total naturalidade."
+        title: "Implantes e Próteses (Reabilitação Oral)",
+        content: "A solução definitiva para a perda de dentes. Realizamos a instalação de implantes dentários que funcionam como raízes artificiais e confeccionamos próteses (coroas, pontes) para devolver a função, a estética e a segurança ao mastigar e sorrir."
+      },
+      {
+        title: "Estética do Sorriso",
+        content: "Desenvolvemos a harmonia e a beleza do seu sorriso. Oferecemos clareamento dental, facetas em resina e porcelana (lentes de contato dentais) e realizamos o planejamento digital para que você visualize e aprove o resultado antes mesmo de começar."
       }
     ],
     specialistsTitle: "Nosso Especialista",
@@ -308,7 +338,8 @@ export const servicesData: Services = {
         specialty: "Especialista em Implantodontia e Reabilitação Oral",
         shortDescription: "Odontologia Geral",
         img: lucasImg,
-        fullDescription: "Dr. Lucas é nosso especialista dedicado a devolver a função e a estética do sorriso através de técnicas avançadas de reabilitação oral. Com grande experiência em implantes dentários, próteses e restaurações complexas, ele utiliza planejamento digital para garantir tratamentos precisos, seguros e com resultados naturais e duradouros."
+        fullDescription: "Dr. Lucas é nosso especialista dedicado a devolver a função e a estética do sorriso através de técnicas avançadas de reabilitação oral. Com grande experiência em implantes dentários, próteses e restaurações complexas, ele utiliza planejamento digital para garantir tratamentos precisos, seguros e com resultados naturais e duradouros.",
+        callToWhatsapp: "Olá! Gostaria de agendar uma avaliação odontológica com o Dr. Lucas."
       }
     ],
     ctaText: "Pronto para cuidar da saúde e da beleza do seu sorriso?"

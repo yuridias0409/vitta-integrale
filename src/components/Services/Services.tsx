@@ -2,7 +2,6 @@ import React from 'react';
 import Image, { StaticImageData } from 'next/image';
 import styles from './Services.module.css';
 
-// CAMINHOS DE IMPORTAÇÃO CORRIGIDOS para usar o alias '@/'
 import fisioterapiaImg from '@/assets/images/specialties/icons/fisioterapia.png';
 import terapiaOcupacionalImg from '@/assets/images/specialties/icons/terapiaOcupacional.png';
 import drenagemImg from '@/assets/images/specialties/icons/drenagem.png';
@@ -30,9 +29,9 @@ const servicesData: ServiceItemProps[] = [
 ];
 
 const ServiceItem: React.FC<ServiceItemProps> = ({ name, img, href }) => (
-  <a href={href} className={styles.serviceItem} target="_blank" rel="noopener noreferrer"> {/* Adicionado href, target e rel */}
+  <a href={href} className={styles.serviceItem} target="_blank" rel="noopener noreferrer">
     <div className={styles.serviceCircle}>
-      <Image src={img} alt={name} width={80} height={80} style={{ objectFit: 'contain' }} />
+      <Image src={img} alt={name} />
     </div>
     <p className={styles.serviceTitle}>{name}</p>
   </a>
