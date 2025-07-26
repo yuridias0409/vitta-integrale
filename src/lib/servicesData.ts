@@ -250,7 +250,7 @@ export const servicesData: Services = {
         specialty: "Fisioterapeuta e Especialista em Terapia ABA",
         shortDescription: "Especialista em Terapia ABA",
         img: erikaImg,
-        fullDescription: "Érika é uma profissional dedicada e experiente na aplicação da Terapia ABA. Com um olhar atento ao desenvolvimento infantil e às necessidades individuais de cada criança, ela trabalha para promover a comunicação, habilidades sociais e autonomia, utilizando estratégias lúdicas e baseadas em evidências científicas.",
+        fullDescription: "Érika é uma profissional dedicada e experiente na aplicação da Terapia ABA, com pós-graduação na área. Com um olhar atento ao desenvolvimento infantil e às necessidades individuais de cada criança, ela trabalha para promover a comunicação, habilidades sociais e autonomia, utilizando estratégias lúdicas, naturalistas e baseadas em evidências científicas.",
         callToWhatsapp: "Olá! Gostaria de mais informações sobre a Terapia ABA com a especialista Érika Shirley."
       }
     ],
@@ -273,6 +273,10 @@ export const servicesData: Services = {
       {
         title: "Mobilização Articular",
         content: "Consiste em movimentos passivos e graduados aplicados às articulações para restaurar sua amplitude de movimento e reduzir a dor. É indicada para tratar rigidez articular, capsulites e limitações de movimento decorrentes de lesões ou imobilização, promovendo a saúde das cartilagens e a função articular."
+      },
+      {
+        title: "Quiropraxia",
+        content: "Focada no diagnóstico e tratamento de disfunções do sistema neuro-músculo-esquelético, a quiropraxia utiliza ajustes e manipulações precisas, especialmente na coluna vertebral, para restaurar a mobilidade, aliviar a dor, reduzir a tensão muscular e melhorar a função geral do corpo."
       },
       {
         title: "Kinesio Taping",

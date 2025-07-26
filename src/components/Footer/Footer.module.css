@@ -37,13 +37,19 @@
   margin-bottom: 20px;
   font-size: 1.3rem;
 }
+
 .footerColumn p, .footerColumn a {
   color: #bdc3c7;
   text-decoration: none;
-  line-height: 1.7;
+  line-height: 1.5;
   font-size: 1rem;
   transition: color 0.2s ease;
 }
+
+.footerColumn p {
+  margin-bottom: 2px;
+}
+
 .footerColumn a:hover {
   color: #fff;
 }
@@ -51,11 +57,19 @@
   text-decoration: underline !important;
   font-weight: bold;
 }
+
+/* --- AJUSTES AQUI --- */
+.socialIcons {
+  margin-top: 15px; /* Adiciona espaço acima dos ícones sociais */
+}
+
 .socialIcons a {
   display: inline-flex;
-  align-items: center;
+  align-items: center; /* Esta linha alinha o ícone e o texto verticalmente */
   gap: 10px;
 }
+/* --- FIM DOS AJUSTES --- */
+
 .footerMap {
   width: 280px;
   height: 170px;
